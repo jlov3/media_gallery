@@ -1,60 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
 
-  <link href="style/modern_normalize.css" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
 
-  <link href="" rel="icon" type="image/x-icon">
-  <title>Media Gallery</title>
+    <link href="style/modern-normalize.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
 
-  <!-- 2 Google fonts -->
-</head>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/281/281517.png">
+  </head>
 
+  <body>
+    <div id="header">
+      <span>Up & Over</span>
+      <h2>A Travel Gallery</h2>
+      <div id="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Trips</a></li>
+          <li><a href="">Resources</a></li>
+        </ul>
+      </div> <!-- nav -->
+    </div>
 
-<body>
+    <div id="hero">
+      <div id="hero-imgs">
+        <img class="himgs" src="https://picsum.photos/1300/500">
+        <img class="himgs" src="https://picsum.photos/seed/b/1300/500">
+        <img class="himgs" src="https://picsum.photos/seed/c/1300/500">
+        <img class="himgs" src="https://picsum.photos/seed/d/1300/500">
+      </div> <!-- hero-imgs -->
 
-<header>
-  <nav>
-  </nav>
-</header>
+      <div id="imination">
+        <button id="imiOne" class="pag" onclick="imihide(0)">&nbsp;</button>
+        <button id="imiTwo" class="pag" onclick="imihide(1)">&nbsp;</button>
+        <button id="imiThree" class="pag" onclick="imihide(2)">&nbsp;</button>
+        <button id="imiFour" class="pag" onclick="imihide(3)">&nbsp;</button>
+      </div> <!-- imination -->
+    </div> <!-- hero -->
 
-<div id="hero">
-  <img src="https://picsum.photos/seed/a/300/300">
-  <img src="https://picsum.photos/seed/b/300/300">
-  <img src="https://picsum.photos/seed/c/300/300">
-  <img src="https://picsum.photos/seed/d/300/300">
-</div> <!-- hero -->
+    <div id="main">
+      <div id="gallery">
+        <img src="https://picsum.photos/seed/e/300/300">
+        <img src="https://picsum.photos/seed/f/300/300">
+        <img src="https://picsum.photos/seed/g/300/300">
+        <img src="https://picsum.photos/seed/h/300/300"><br>
+        <img src="https://picsum.photos/seed/i/300/300">
+        <img src="https://picsum.photos/300/300">
+        <img src="https://picsum.photos/seed/k/300/300">
+        <img src="https://picsum.photos/seed/l/300/300"><br>
+        <img src="https://picsum.photos/seed/m/300/300">
+        <img src="https://picsum.photos/seed/n/300/300">
+        <img src="https://picsum.photos/seed/o/300/300">
+        <img src="https://picsum.photos/seed/p/300/300">
+      </div> <!--gallery-->
 
-<hr>
+      <p><span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus ligula ut vehicula aliquet. Nunc sodales ligula odio, in imperdiet nisi tincidunt in. Nulla congue elit sed purus mollis elementum. Ut lectus augue, lobortis sit amet faucibus vel, tempus in libero. Etiam luctus commodo dui non gravida. Suspendisse malesuada, dolor quis elementum malesuada, nibh arcu sagittis sem, id ultrices ex purus sed magna. Integer vel ante finibus, vehicula metus eu, ullamcorper lectus. Aenean vel leo viverra, tristique velit ut, laoreet nibh. Vestibulum scelerisque metus et felis facilisis malesuada. Donec purus elit, faucibus ac eros eget, dignissim rhoncus magna. Nulla bibendum urna eget sapien rhoncus pellentesque. Pellentesque rhoncus lorem sed lectus laoreet, ac luctus neque porttitor. Etiam rutrum eu sapien vitae auctor. Sed id dolor vel augue pulvinar convallis.</p>
 
-<main>
-  <div id="imgs">
-    <img src="https://picsum.photos/seed/e/300/300">
-    <img src="https://picsum.photos/seed/f/300/300">
-    <img src="https://picsum.photos/seed/g/300/300">
-    <img src="https://picsum.photos/seed/h/300/300">
-    <img src="https://picsum.photos/seed/i/300/300">
-    <img src="https://picsum.photos/seed/j/300/300">
-    <img src="https://picsum.photos/seed/k/300/300">
-    <img src="https://picsum.photos/seed/l/300/300">
-    <img src="https://picsum.photos/seed/m/300/300">
-    <img src="https://picsum.photos/seed/n/300/300">
-    <img src="https://picsum.photos/seed/o/300/300">
-    <img src="https://picsum.photos/seed/p/300/300">
-  </div> <!--imgs-->
-</main>
+      <figure>
+        <img src="https://picsum.photos/seed/q/300/300" alt="">
+        <figcaption>Donec sit amet porta dolor, ut rhoncus libero. Suspendisse tempor purus quis tortor varius hendrerit. Cras interdum iaculis posuere. Cras faucibus eros ac.</figcaption>
+      </figure>
+    </div> <!-- main -->
 
-<footer>
-  <script>
-    document.write(newDate().getFullYear())
-  </script>
-  &nbsp; Jo Kelley</span>
-</footer>
+    <footer>
+      <p><strong>2025 - Jo Kelley</strong></p>
+    </footer>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
